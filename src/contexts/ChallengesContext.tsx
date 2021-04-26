@@ -52,7 +52,7 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
         setActiveChallenge(challenge)
 
         if (Notification.permission === 'granted') {
-            new Notification('Novo desafio ', {
+            new Notification('Novo desafio x', {
                 body: `Valendo ${challenge.amount}xp!`
             })
         }
